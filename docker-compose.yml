@@ -1,0 +1,14 @@
+version: "2"
+services:
+  burp:
+    build: .
+    volumes:
+      - ".java:/home/burp/.java"
+      - "/tmp/.X11-unix:/tmp/.X11-unix"
+      - "./share:/home/burp/share"
+      - ${HOME}/.Xauthority:/home/burp/.Xauthority
+    environment:
+      - DISPLAY
+    ports:
+      - "127.0.0.1:8080:8080"
+    mem_limit: 2G
