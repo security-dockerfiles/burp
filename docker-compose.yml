@@ -4,6 +4,7 @@ services:
     build: .
     volumes:
       - ".java:/home/burp/.java"
+      - ".BurpSuite:/home/burp/.BurpSuite"
       - "/tmp/.X11-unix:/tmp/.X11-unix"
       - "./share:/home/burp/share"
       - ${HOME}/.Xauthority:/home/burp/.Xauthority

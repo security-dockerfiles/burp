@@ -5,7 +5,7 @@ BurpSuite dockerized
 
 Firstly, you should place your BurpSuite jar file to the root of the cloned repo and change `BURP_VERSION` in Dockerfile accordingly.
 
-The folders `share` and `.java` must be owned by a non-root user before you start container, otherwise you may lose your license activation, so use carefully.
+The folders `share`, `.java` and `.BurpSuite` must be owned by a non-root user before you start container, otherwise you may lose your license activation, so use carefully.
 
 If you already have an activated license, just copy it to `.java` or specify volume from your `$HOME/.java` to `/home/burp/.java` in `docker-compose.yml` and you will probably be fine (NOT TESTED!).
 

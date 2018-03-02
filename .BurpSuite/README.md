@@ -1,0 +1,4 @@
+.BurpSuite
+----------
+
+BurpSuite files
